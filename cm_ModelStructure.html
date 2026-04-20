@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+   <meta http-equiv='Content-type' content='text/html;charset=UTF-8'>
+   <title>Conceptual Model (cm) Seattle Method</title>
+ <style type='text/css'>
+    body {font-size:8pt; font-family:Verdana, Arial; color:Black; background-color:white}
+    hr {width:100%; color:Black}
+    table {margin: 20px auto; table-layout:fixed;word-wrap:break-word;border-collapse:separate;border-spacing:1px;}
+    th {font-size:7pt; font-weight:bold; color:white; background-color:Navy; border:1px solid black; vertical-align:bottom}
+    td {font-size:8pt}
+    .Row {font-size:8pt; font-family:Verdana, Arial; font-weight:normal; color:black; vertical-align:text-top}
+    .RowNetwork {font-size:10pt; font-weight:bold; color:black; vertical-align:text-top}
+    .RowTable {font-size:8pt; font-weight:bold; color:blue; vertical-align:text-top}
+    .RowAxis {font-size:8pt; font-weight:bold; color:#A52A2A; vertical-align:text-top}
+    .RowMember {font-size:8pt; font-weight:normal; color:#778899; vertical-align:text-top}
+    .RowLineItems {font-size:8pt; font-weight:bold; color:#A52A2A; vertical-align:text-top}
+    .RowAbstract {font-size:8pt; font-weight:normal; font-style:normal; color:black; vertical-align:text-top}
+    p.Center {text-align:center; }
+    h1 {font-size:12pt; font-family:Verdana, Arial; font-weight:bold; text-align:center; color:black; margin-top:1em}
+    h3 {font-size:8pt; font-family:Verdana, Arial; font-weight:normal; text-align:center; color:black; margin-top:1em}
+</style>
+</head>
+<body>
+    <h1><span style='color:black'>Conceptual Model (cm) Seattle Method</span></h1>
+    <h3>
+      <a href='cm.xsd' target='_new'>Terms</a> |
+      <a href='http://www.xbrlsite.com/seattlemethod/FinancialReportPieces.html' target='_new'>Informal Visualization</a> | 
+      <a href='https://photos.app.goo.gl/VKomHYBr5pnvPjAEA' target='_new'>UML</a> |
+      <a href='https://seattlemethod.blogspot.com/2025/11/framework.html' target='_new'>Framework</a>
+    </h3>
+      <table id='Representation'>
+        <tr>
+           <th style='width:30px; text-align:right'>Line</th>
+           <th style='width:700px'>Label</th>
+           <th style='width:150px'>Object Class</th>
+           <th style='width:60px'>Period Type</th>
+           <th style='width:45px'>Balance</th>
+           <th style='width:500px'>Report Element Name</th>
+        </tr>
+        <tr style='background-color:#FFAA66'>
+           <td class='Row' style='text-align:right'>1</td>
+           <td class='RowNetwork' style='margin-left:10px;padding-left:10px'>Financial Report Conceptual Model</td>
+           <td class='Row'>Network</td>
+           <td class='Row'><p style='visibility:hidden; margin:0em'>*</p></td>
+           <td class='Row'><p style='visibility:hidden; margin:0em'>*</p></td>
+           <td class='Row'>https://github.com/seattlemethod/universal/cm/role/ConceptualModel</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>2</td>
+           <td class='RowAbstract' style='margin-left:10px;padding-left:10px'>Thing</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Thing</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>3</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Business Rule</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:BusinessRule</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>4</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Business Rule Pattern</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:BusinessRulePattern</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>5</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Greater Than Or Equal To Zero</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:GreaterThanOrEqualToZero</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>6</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Variance</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Variance</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>7</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Adjustment</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Adjustment</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>8</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Roll Up</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:RollUp</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>9</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Roll Forward</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:RollForward</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>10</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Greater Than</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:GreaterThan</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>11</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Less Than</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:LessThan</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>12</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Exists</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Exists</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>13</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Co Exists</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:CoExists</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>14</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Equal To</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:EqualTo</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>15</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Key Financial Ratio</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:KeyFinancialRatio</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>16</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Fundamental Accounting Concept Relation</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:FundamentalAccountingConceptRelation</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>17</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Business Report</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:BusinessReport</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>18</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Financial Report</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:FinancialReport</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>19</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Economic Entity</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:EconomicEntity</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>20</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Reporting Scheme</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ReportingScheme</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>21</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>US GAAP</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:USGAAP</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>22</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Private Company Financial Reports In US GAAP</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:PrivateCompanyFinancialReportsInUSGAAP</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>23</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Public Company Financial Reports In US GAAP to SEC</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:PublicCompanyFinancialReportsInUSGAAPToSEC</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>24</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Financial Reporting by Not-for-Profit Entity in US</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:FinancialReportingByNotForProfitEntityInUS</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>25</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>IFRS</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:IFRS</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>26</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Financial Reports in IFRS</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:FinancialReportsInIFRS</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>27</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Financial Reports in IFRS for SMEs</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:FinancialReportsInIFRSSMEs</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>28</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Financial Reporting by US State or Local Governmental Entity</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:FinancialReportingByUSStateOrLocalGovernmentalEntity</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>29</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>XBRL-based Reporting to Iran Regulator</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:XBRLBasedReportingToIranRegulator</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>30</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>XBRL-based General Business Reports</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:XBRLBasedGeneralBusinessReports</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>31</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Personal Financial Reporting in US</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:PersonalFinancialReportingInUS</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>32</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>XBRL-based Reporting Using XBRL-US Work-in-Progress/Surety Taxonomy</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:XBRLBasedReportingUsingXBRLUSWorkInProgressSuretyTaxonomy</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>33</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Income Tax Basis</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:IncomeTaxBasis</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>34</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Other Comprehensive Basis of Accounting</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:OtherComprehensiveBasisOfAccounting</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>35</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Accounting Activity</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:AccountingActivity</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>36</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Commercial and Industrial</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:CommercialAndIndustrial</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>37</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Interest-based Revenue</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:InterestBasedRevenue</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>38</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Insurance-based Revenue</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:InsuranceBasedRevenue</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>39</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Real Estate Investment Trusts</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:RealEstateInvestmentTrusts</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>40</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Securities-based Revenue</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:SecuritiesBasedRevenue</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>41</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Fund or Trust</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:FundOrTrust</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>42</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Unknown Accounting Activity</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:UnknownAccountingActivity</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>43</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Entity Legal Form</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:EntityLegalForm</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>44</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Proprietorship</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Proprietorship</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>45</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Unknown Entity Legal Form</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:UnknownEntityLegalForm</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>46</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Corporation</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Corporation</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>47</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Limited Liability Corporation</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:LimitedLiabilityCorporation</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>48</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Partnership</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Partnership</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>49</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Limited Liability Partnership</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:LimitedLiabilityPartnership</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>50</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Financial Report Component</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:FinancialReportComponent</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>51</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Primary Financial Statement</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:PrimaryFinancialStatement</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>52</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Parenthetical Comments</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ParentheticalComments</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>53</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Block</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Block</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>54</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Component</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Component</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>55</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Report Fragment</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ReportFragment</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>56</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Note (Disclosure Note)</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Note</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>57</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Disclosure Note</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:DisclosureNote</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>58</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Disclosure</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Disclosure</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>59</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Supplementary Information</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:SupplementaryInformation</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>60</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Entity Information</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:EntityInformation</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>61</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Document Information</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:DocumentInformation</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>62</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Exemplar</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Exemplar</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>63</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Prototype</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Prototype</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>64</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Topic (Disclosure topic)</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Topic</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>65</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Report Element Type</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ReportElementType</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>66</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Network</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Network</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>67</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Member</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Member</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>68</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Table</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Table</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>69</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Axis</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Axis</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>70</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Concept</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Concept</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>71</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Abstract</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Abstract</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>72</td>
+           <td class='Row' style='margin-left:30px;padding-left:30px'>Line Items</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:LineItems</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>73</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Characteristic</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Characteristic</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>74</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Reporting Entity</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ReportingEntity</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>75</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Legal Entity</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:LegalEntity</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>76</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Reporting Scenario</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ReportingScenario</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>77</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Business Segment</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:BusinessSegment</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>78</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Geographic Area</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:GeographicArea</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>79</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Report Date</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ReportDate</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>80</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Fiscal Period</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:FiscalPeriod</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>81</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Calendar Period</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:CalendarPeriod</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>82</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Instrument</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Instrument</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>83</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Range</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Range</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>84</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Line Item</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:LineItem</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>85</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Member Arrangement Pattern</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:MemberArrangementPattern</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>86</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Whole-Part</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:WholePart</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>87</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Type-Of</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:TypeOf</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>88</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Network Section Type</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:NetworkType</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>89</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Schedule Type</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ScheduleType</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>90</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Disclosure Type</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:DisclosureType</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>91</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Document Type</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:DocumentType</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>92</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Statement Type</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:StatementType</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>93</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Network Tagging Level</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:NetworkTaggingLevel</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>94</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Level 4 Detail</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Level4Detail</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>95</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Level 3 Disclosure Text Block</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Level3TextBlock</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>96</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Level 1 Note Text Block</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Level1TextBlock</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>97</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Level 2 Policy Text Block</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Level2TextBlock</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>98</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Concept Arrangement Pattern</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ConceptArrangemetPattern</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>99</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Roll Up</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:RollUp</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>100</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Roll Forward Info</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:RollForwardInfo</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>101</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Roll Forward</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:RollForward</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>102</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Hierarchy</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Hierarchy</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>103</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Adjustment</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Adjustment</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>104</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Variance</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Variance</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>105</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Complex Computation</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ComplexComputation</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>106</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Text Block</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:TextBlock</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>107</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Level 2 Policy Text Block</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Level2TextBlock</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>108</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Level 1 Note Text Block</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Level1TextBlock</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>109</td>
+           <td class='RowAbstract' style='margin-left:40px;padding-left:40px'>Level 3 Disclosure Text Block</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Level3TextBlock</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>110</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Verification Rule</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:VerificationRule</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>111</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Peer Consistency Rule</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:PeerConsistencyRule</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>112</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Prior Period Consistency Rule</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:PriorPeriodConsistencyRule</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>113</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Reporting System Specific Rule</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ReportingSystemSpecificRule</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>114</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Report Level Model Structure Rule</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ReportLevelModelStructureRule</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>115</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>XBRL Technical Syntax Rule</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:XBRLTechnicalSyntaxRule</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>116</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Fundamental Accounting Concept Relation</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:FundamentalAccountingConceptRelation</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>117</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>To Do (Manual Task)</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ToDoManualTask</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>118</td>
+           <td class='RowAbstract' style='margin-left:30px;padding-left:30px'>Automated Accounting and Reporting Checks</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:AutomatedAccountingAndReportingChecks</td>
+        </tr>
+        <tr style='background-color:#ccffcc'>
+           <td class='Row' style='text-align:right'>119</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Reporting Style</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:ReportingStyle</td>
+        </tr>
+        <tr style='background-color:#F7F7F7'>
+           <td class='Row' style='text-align:right'>120</td>
+           <td class='RowAbstract' style='margin-left:20px;padding-left:20px'>Industry</td>
+           <td class='Row'>Abstract<span style='font-size:7pt; color:gray'></span></td>
+           <td class='Row'></td>
+           <td class='Row'></td>
+           <td class='Row'>cm:Industry</td>
+        </tr>
+      </table>
+    <h3><span style='color:black'>1/18/2026 2:18:44 PM</span></h3>
+    </body>
+</html>

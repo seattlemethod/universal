@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- Created by Charles Hoffman, CPA 2024-04-20 -->
+<!-- Created by Charles Hoffman, CPA 2026-04-20 -->
 <!-- Definition of properties -->
 <schema
   xmlns='http://www.w3.org/2001/XMLSchema'
@@ -10,8 +10,8 @@
   xmlns:generic='http://xbrl.org/2008/generic'
   xmlns:nonnum='http://www.xbrl.org/dtr/type/non-numeric'
   xmlns:num='http://www.xbrl.org/dtr/type/numeric'
-  xmlns:prop='https://xbrlsite.azurewebsites.net/seattlemethod/seattlemethod/Properties'
-  targetNamespace='https://xbrlsite.azurewebsites.net/seattlemethod/seattlemethod/Properties'
+  xmlns:prop='https://github.com/seattlemethod/universal/Properties'
+  targetNamespace='https://github.com/seattlemethod/universal/Properties'
   elementFormDefault='qualified'
   attributeFormDefault='unqualified'>
   <annotation>

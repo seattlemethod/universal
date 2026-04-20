@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- Created by Charles Hoffman, CPA 2024-04-20 -->
+<!-- Created by Charles Hoffman, CPA 2026-04-20 -->
 <schema
 	xmlns='http://www.w3.org/2001/XMLSchema'
 	xmlns:xbrli='http://www.xbrl.org/2003/instance'
@@ -7,8 +7,8 @@
 	xmlns:xlink='http://www.w3.org/1999/xlink'
 	elementFormDefault='qualified'
 	attributeFormDefault='unqualified'
-	xmlns:rpart='https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts'
-	targetNamespace='https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts'
+	xmlns:rpart='https://github.com/seattlemethod/universal/cm/rparts'
+	targetNamespace='https://github.com/seattlemethod/universal/cm/rparts'
 	>
 
   <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>

@@ -10,6 +10,9 @@
   xmlns:link='http://www.xbrl.org/2003/linkbase'
   xmlns:xlink='http://www.w3.org/1999/xlink'
 
+  xmlns:cm-roles="https://github.com/seattlemethod/universal/cm-roles"
+	xmlns:cm-arcroles="https://github.com/seattlemethod/universal/cm-arcroles"
+
   xmlns:cm='https://github.com/seattlemethod/universal/cm'
   xmlns:cm-theory='https://github.com/seattlemethod/universal/cm/theory'
   targetNamespace='https://github.com/seattlemethod/universal/cm/theory'
@@ -29,7 +32,8 @@
 
 <import namespace='https://github.com/seattlemethod/universal/cm' schemaLocation='cm.xsd' />
 
-
+<import namespace='https://github.com/seattlemethod/universal/cm-roles' schemaLocation='cm-roles.xsd' />
+<import namespace='https://github.com/seattlemethod/universal/cm-arcroles' schemaLocation='cm-arcroles.xsd' />
 
 
 </schema>

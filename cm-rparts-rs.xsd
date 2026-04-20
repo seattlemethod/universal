@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- Created by Charles Hoffman, CPA 2024-04-20 -->
+<!-- Created by Charles Hoffman, CPA 2026-04-20 -->
 <schema
 	xmlns='http://www.w3.org/2001/XMLSchema'
 	xmlns:xbrli='http://www.xbrl.org/2003/instance'
@@ -7,15 +7,15 @@
 	xmlns:xlink='http://www.w3.org/1999/xlink'
 	elementFormDefault='qualified'
 	attributeFormDefault='unqualified'
-	xmlns:rpart-rs='https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts-rs'
-	targetNamespace='https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts-rs'
+	xmlns:rpart-rs='https://github.com/seattlemethod/universal/cm/rparts-rs'
+	targetNamespace='https://github.com/seattlemethod/universal/cm/rparts-rs'
 	>
 
   <annotation>
     <appinfo>
       <!-- Reference resouorce roles -->
 
-			<link:roleType roleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/roles/reportingStyle" id="reportingStyle">
+			<link:roleType roleURI="https://github.com/seattlemethod/universal/cm/roles/reportingStyle" id="reportingStyle">
         <link:definition>A reference that points to a reporting style for a report.</link:definition>
         <link:usedOn>link:reference</link:usedOn>
       </link:roleType>

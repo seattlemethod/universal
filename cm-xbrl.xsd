@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- Created by Charles Hoffman, CPA 2024-04-20 -->
+<!-- Created by Charles Hoffman, CPA 2026-04-20 -->
 <!-- Defines data type use for FAC validation -->
 <schema
  xmlns='http://www.w3.org/2001/XMLSchema'
  xmlns:xbrli='http://www.xbrl.org/2003/instance'
  xmlns:link='http://www.xbrl.org/2003/linkbase'
  xmlns:xlink='http://www.w3.org/1999/xlink'
- xmlns:cm-xbrl='https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-xbrl'
- targetNamespace='https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-xbrl'
+ xmlns:cm-xbrl='https://github.com/seattlemethod/universal/cm-xbrl'
+ targetNamespace='https://github.com/seattlemethod/universal/cm-xbrl'
  elementFormDefault='qualified'
  attributeFormDefault='unqualified'>
   <annotation>

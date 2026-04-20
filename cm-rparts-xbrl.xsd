@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- Created by Charles Hoffman, CPA 2024-04-20 -->
+<!-- Created by Charles Hoffman, CPA 2026-04-20 -->
 <schema
 	xmlns='http://www.w3.org/2001/XMLSchema'
 	xmlns:xbrli='http://www.xbrl.org/2003/instance'
@@ -7,37 +7,37 @@
 	xmlns:xlink='http://www.w3.org/1999/xlink'
 	elementFormDefault='qualified'
 	attributeFormDefault='unqualified'
-	xmlns:rpart='https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts'
-	targetNamespace='https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts'
+	xmlns:rpart='https://github.com/seattlemethod/universal/cm/rparts'
+	targetNamespace='https://github.com/seattlemethod/universal/cm/rparts'
 	>
 
   <annotation>
     <appinfo>
       <!-- Reference resouorce roles -->
-      <link:roleType roleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-roles/roles/template" id="template">
+      <link:roleType roleURI="https://github.com/seattlemethod/universal/cm-roles/roles/template" id="template">
         <link:definition>A reference that points to a template of a disclosure.</link:definition>
         <link:usedOn>link:reference</link:usedOn>
       </link:roleType>
-      <link:roleType roleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-roles/roles/exemplar" id="exemplar">
+      <link:roleType roleURI="https://github.com/seattlemethod/universal/cm-roles/roles/exemplar" id="exemplar">
         <link:definition>A reference that points to an exemplar (example) of a disclosure.</link:definition>
         <link:usedOn>link:reference</link:usedOn>
       </link:roleType>
-      <link:roleType roleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-roles/roles/exemplarsList" id="exemplarsList">
+      <link:roleType roleURI="https://github.com/seattlemethod/universal/cm-roles/roles/exemplarsList" id="exemplarsList">
         <link:definition>A reference that points to a LIST of exemplar (examples) of a disclosure.</link:definition>
         <link:usedOn>link:reference</link:usedOn>
       </link:roleType>
 
-      <link:roleType roleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-roles/roles/baseTaxonomy" id="baseTaxonomy">
+      <link:roleType roleURI="https://github.com/seattlemethod/universal/cm-roles/roles/baseTaxonomy" id="baseTaxonomy">
         <link:definition>A reference that points to the network URI of the base taxonomy that contains information about a disclosure.</link:definition>
         <link:usedOn>link:reference</link:usedOn>
       </link:roleType>
-      <link:roleType roleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-roles/roles/xmlInfoset" id="xmlInfoset">
+      <link:roleType roleURI="https://github.com/seattlemethod/universal/cm-roles/roles/xmlInfoset" id="xmlInfoset">
         <link:definition>A reference that points to a machine readable XML InfoSet that contains information related to a disclosure.</link:definition>
         <link:usedOn>link:reference</link:usedOn>
       </link:roleType>
 
 
-			<link:roleType roleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-roles/roles/reportingStyle" id="reportingStyle">
+			<link:roleType roleURI="https://github.com/seattlemethod/universal/cm-roles/roles/reportingStyle" id="reportingStyle">
         <link:definition>A reference that points to a reporting style for a report.</link:definition>
         <link:usedOn>link:reference</link:usedOn>
       </link:roleType>

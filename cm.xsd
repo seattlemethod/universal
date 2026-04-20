@@ -52,12 +52,15 @@
   <element id='cm_CompleteFlatSet' name='CompleteFlatSet' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
   <element id='cm_CompleteHierarchicalSet' name='CompleteHierarchicalSet' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
   <element id='cm_ComplexComputation' name='ComplexComputation' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+
   <element id='cm_Arithmetic' name='Arithmetic' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
   <element id='cm_Set' name='Set' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
   <element id='cm_Hypercube' name='Hypercube' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
   <element id='cm_Dimension' name='Dimension' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+
   <element id='cm_Debit' name='Debit' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
   <element id='cm_Credit' name='Credit' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+
   <element id='cm_Component' name='Component' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
   <element id='cm_ComponentIntregalObject' name='ComponentIntregalObject' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
   <element id='cm_ComprehensiveIncome' name='ComprehensiveIncome' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />

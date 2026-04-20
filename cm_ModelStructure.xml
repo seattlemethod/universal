@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Component>
+   <Network identifier="https://github.com/seattlemethod/universal/cm/role/ConceptualModel"
+            label="Financial Report Conceptual Model">
+      <Concept name="cm:Thing" label="Thing" prefix="cm" dataType="xbrli:stringItemType"
+               baseDataType="xbrli:stringItemType"
+               abstract="true"
+               periodType="duration">
+         <Concept name="cm:BusinessRule" label="Business Rule" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:BusinessRulePattern" label="Business Rule Pattern" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="cm:GreaterThanOrEqualToZero" label="Greater Than Or Equal To Zero"
+                        prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:Variance" label="Variance" prefix="cm" dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:Adjustment" label="Adjustment" prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:RollUp" label="Roll Up" prefix="cm" dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:RollForward" label="Roll Forward" prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:GreaterThan" label="Greater Than" prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:LessThan" label="Less Than" prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:Exists" label="Exists" prefix="cm" dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:CoExists" label="Co Exists" prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:EqualTo" label="Equal To" prefix="cm" dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+            </Concept>
+            <Concept name="cm:KeyFinancialRatio" label="Key Financial Ratio" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:FundamentalAccountingConceptRelation"
+                     label="Fundamental Accounting Concept Relation"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="cm:BusinessReport" label="Business Report" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:FinancialReport" label="Financial Report" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="cm:EconomicEntity" label="Economic Entity" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration"/>
+         <Concept name="cm:ReportingScheme" label="Reporting Scheme" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:USGAAP" label="US GAAP" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="cm:PrivateCompanyFinancialReportsInUSGAAP"
+                        label="Private Company Financial Reports In US GAAP"
+                        prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:PublicCompanyFinancialReportsInUSGAAPToSEC"
+                        label="Public Company Financial Reports In US GAAP to SEC"
+                        prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:FinancialReportingByNotForProfitEntityInUS"
+                        label="Financial Reporting by Not-for-Profit Entity in US"
+                        prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+            </Concept>
+            <Concept name="cm:IFRS" label="IFRS" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="cm:FinancialReportsInIFRS" label="Financial Reports in IFRS" prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:FinancialReportsInIFRSSMEs" label="Financial Reports in IFRS for SMEs"
+                        prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+            </Concept>
+            <Concept name="cm:FinancialReportingByUSStateOrLocalGovernmentalEntity"
+                     label="Financial Reporting by US State or Local Governmental Entity"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:XBRLBasedReportingToIranRegulator"
+                     label="XBRL-based Reporting to Iran Regulator"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:XBRLBasedGeneralBusinessReports"
+                     label="XBRL-based General Business Reports"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:PersonalFinancialReportingInUS"
+                     label="Personal Financial Reporting in US"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:XBRLBasedReportingUsingXBRLUSWorkInProgressSuretyTaxonomy"
+                     label="XBRL-based Reporting Using XBRL-US Work-in-Progress/Surety Taxonomy"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:IncomeTaxBasis" label="Income Tax Basis" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:OtherComprehensiveBasisOfAccounting"
+                     label="Other Comprehensive Basis of Accounting"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="cm:AccountingActivity" label="Accounting Activity" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:CommercialAndIndustrial" label="Commercial and Industrial" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:InterestBasedRevenue" label="Interest-based Revenue" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:InsuranceBasedRevenue" label="Insurance-based Revenue" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:RealEstateInvestmentTrusts" label="Real Estate Investment Trusts"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:SecuritiesBasedRevenue" label="Securities-based Revenue" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:FundOrTrust" label="Fund or Trust" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:UnknownAccountingActivity" label="Unknown Accounting Activity"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="cm:EntityLegalForm" label="Entity Legal Form" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:Proprietorship" label="Proprietorship" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:UnknownEntityLegalForm" label="Unknown Entity Legal Form" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Corporation" label="Corporation" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="cm:LimitedLiabilityCorporation" label="Limited Liability Corporation"
+                        prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+            </Concept>
+            <Concept name="cm:Partnership" label="Partnership" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="cm:LimitedLiabilityPartnership" label="Limited Liability Partnership"
+                        prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+            </Concept>
+         </Concept>
+         <Concept name="cm:FinancialReportComponent" label="Financial Report Component"
+                  prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:PrimaryFinancialStatement" label="Primary Financial Statement"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:ParentheticalComments" label="Parenthetical Comments" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Block" label="Block" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Component" label="Component" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:ReportFragment" label="Report Fragment" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Note" label="Note (Disclosure Note)" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:DisclosureNote" label="Disclosure Note" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Disclosure" label="Disclosure" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:SupplementaryInformation" label="Supplementary Information"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:EntityInformation" label="Entity Information" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:DocumentInformation" label="Document Information" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="cm:Exemplar" label="Exemplar" prefix="cm" dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration"/>
+         <Concept name="cm:Prototype" label="Prototype" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration"/>
+         <Concept name="cm:Topic" label="Topic (Disclosure topic)" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration"/>
+         <Concept name="cm:ReportElementType" label="Report Element Type" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:Network" label="Network" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Member" label="Member" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Table" label="Table" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Axis" label="Axis" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Concept" label="Concept" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Abstract" label="Abstract" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <LineItems name="cm:LineItems" label="Line Items" prefix="cm"/>
+         </Concept>
+         <Concept name="cm:Characteristic" label="Characteristic" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:ReportingEntity" label="Reporting Entity" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:LegalEntity" label="Legal Entity" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:ReportingScenario" label="Reporting Scenario" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:BusinessSegment" label="Business Segment" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:GeographicArea" label="Geographic Area" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:ReportDate" label="Report Date" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:FiscalPeriod" label="Fiscal Period" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:CalendarPeriod" label="Calendar Period" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Instrument" label="Instrument" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Range" label="Range" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:LineItem" label="Line Item" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="cm:MemberArrangementPattern" label="Member Arrangement Pattern"
+                  prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:WholePart" label="Whole-Part" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:TypeOf" label="Type-Of" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="cm:NetworkType" label="Network Section Type" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:ScheduleType" label="Schedule Type" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:DisclosureType" label="Disclosure Type" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:DocumentType" label="Document Type" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:StatementType" label="Statement Type" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="cm:NetworkTaggingLevel" label="Network Tagging Level" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:Level4Detail" label="Level 4 Detail" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Level3TextBlock" label="Level 3 Disclosure Text Block" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Level1TextBlock" label="Level 1 Note Text Block" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Level2TextBlock" label="Level 2 Policy Text Block" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="cm:ConceptArrangemetPattern" label="Concept Arrangement Pattern"
+                  prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:RollUp" label="Roll Up" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:RollForwardInfo" label="Roll Forward Info" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:RollForward" label="Roll Forward" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Hierarchy" label="Hierarchy" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Adjustment" label="Adjustment" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:Variance" label="Variance" prefix="cm" dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:ComplexComputation" label="Complex Computation" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:TextBlock" label="Text Block" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration">
+               <Concept name="cm:Level2TextBlock" label="Level 2 Policy Text Block" prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:Level1TextBlock" label="Level 1 Note Text Block" prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+               <Concept name="cm:Level3TextBlock" label="Level 3 Disclosure Text Block" prefix="cm"
+                        dataType="xbrli:stringItemType"
+                        baseDataType="xbrli:stringItemType"
+                        abstract="true"
+                        periodType="duration"/>
+            </Concept>
+         </Concept>
+         <Concept name="cm:VerificationRule" label="Verification Rule" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration">
+            <Concept name="cm:PeerConsistencyRule" label="Peer Consistency Rule" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:PriorPeriodConsistencyRule" label="Prior Period Consistency Rule"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:ReportingSystemSpecificRule" label="Reporting System Specific Rule"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:ReportLevelModelStructureRule"
+                     label="Report Level Model Structure Rule"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:XBRLTechnicalSyntaxRule" label="XBRL Technical Syntax Rule"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:FundamentalAccountingConceptRelation"
+                     label="Fundamental Accounting Concept Relation"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:ToDoManualTask" label="To Do (Manual Task)" prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+            <Concept name="cm:AutomatedAccountingAndReportingChecks"
+                     label="Automated Accounting and Reporting Checks"
+                     prefix="cm"
+                     dataType="xbrli:stringItemType"
+                     baseDataType="xbrli:stringItemType"
+                     abstract="true"
+                     periodType="duration"/>
+         </Concept>
+         <Concept name="cm:ReportingStyle" label="Reporting Style" prefix="cm"
+                  dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration"/>
+         <Concept name="cm:Industry" label="Industry" prefix="cm" dataType="xbrli:stringItemType"
+                  baseDataType="xbrli:stringItemType"
+                  abstract="true"
+                  periodType="duration"/>
+      </Concept>
+   </Network>
+   <Network identifier="http://www.xbrl.org/2003/role/link"
+            label="http://www.xbrl.org/2003/role/link"/>
+</Component>
