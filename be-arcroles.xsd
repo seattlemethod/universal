@@ -5,30 +5,30 @@
  xmlns:xbrli='http://www.xbrl.org/2003/instance'
  xmlns:link='http://www.xbrl.org/2003/linkbase'
  xmlns:xlink='http://www.w3.org/1999/xlink'
- xmlns:be-arcroles='https://xbrlsite.azurewebsites.net/seattlemethod/cm/be-arcroles'
- targetNamespace='https://xbrlsite.azurewebsites.net/seattlemethod/cm/be-arcroles'
+ xmlns:be-arcroles='https://github.com/seattlemethod/universal/cm/be-arcroles'
+ targetNamespace='https://github.com/seattlemethod/universal/cm/be-arcroles'
  elementFormDefault='qualified'
  attributeFormDefault='unqualified'>
   <annotation>
     <documentation>Provides arcroles for articulating information related to business events and classic transactions.</documentation>
     <appinfo>
 
-      <link:arcroleType arcroleURI='https://xbrlsite.azurewebsites.net/seattlemethod/cm/be-arcroles/arcrole/event-facet' id='event-facet' cyclesAllowed='undirected'>
+      <link:arcroleType arcroleURI='https://github.com/seattlemethod/universal/cm/be-arcroles/arcrole/event-facet' id='event-facet' cyclesAllowed='undirected'>
         <link:definition>Indicates that an event has a specific DCA facet.</link:definition>
         <link:usedOn>link:definitionArc</link:usedOn>
       </link:arcroleType>
 
-      <link:arcroleType arcroleURI='https://xbrlsite.azurewebsites.net/seattlemethod/cm/be-arcroles/arcrole/account-rollforwardgroup' id='account-rollforwardgroup' cyclesAllowed='undirected'>
+      <link:arcroleType arcroleURI='https://github.com/seattlemethod/universal/cm/be-arcroles/arcrole/account-rollforwardgroup' id='account-rollforwardgroup' cyclesAllowed='undirected'>
         <link:definition>Indicates which roll forward grouping of an account a transaction relates to.</link:definition>
         <link:usedOn>link:definitionArc</link:usedOn>
       </link:arcroleType>
 
-      <link:arcroleType arcroleURI='https://xbrlsite.azurewebsites.net/seattlemethod/cm/be-arcroles/arcrole/event-debit' id='event-debit' cyclesAllowed='undirected'>
+      <link:arcroleType arcroleURI='https://github.com/seattlemethod/universal/cm/be-arcroles/arcrole/event-debit' id='event-debit' cyclesAllowed='undirected'>
         <link:definition>Indicates which an account which relates to a business event that is posted as a DEBIT.</link:definition>
         <link:usedOn>link:definitionArc</link:usedOn>
       </link:arcroleType>
 
-      <link:arcroleType arcroleURI='https://xbrlsite.azurewebsites.net/seattlemethod/cm/be-arcroles/arcrole/event-credit' id='event-credit' cyclesAllowed='undirected'>
+      <link:arcroleType arcroleURI='https://github.com/seattlemethod/universal/cm/be-arcroles/arcrole/event-credit' id='event-credit' cyclesAllowed='undirected'>
         <link:definition>Indicates which an account which relates to a business event that is posted as a CREDIT.</link:definition>
         <link:usedOn>link:definitionArc</link:usedOn>
       </link:arcroleType>
