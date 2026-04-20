@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2025-12-29 -->
+<!-- Theory Schema -->
+<?xbrlsite name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?xbrlsite name='CreationDateTime' value='12/29/2025 10:07:17 AM'?>
+<?xbrlsite name='Title' value='Conceptual Model of Financial Report'?>
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+
+  xmlns:cm='https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm'
+  xmlns:cm-theory='https://xbrlsite.azurewebsites.net/seattlemethod/cm/theory'
+  targetNamespace='https://xbrlsite.azurewebsites.net/seattlemethod/cm/theory'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='cm-def.xml' xlink:title='Definition Relations' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='cm-pre.xml' xlink:title='Presentation Relations' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/referencesLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='cm-ref.xml' xlink:title='References' />
+
+
+
+    </appinfo>
+  </annotation>
+<import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+
+<import namespace='https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm' schemaLocation='cm.xsd' />
+
+
+
+
+</schema>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2026-01-31 -->
+<!-- Mapping of SKOS meaning to XBRL meaning -->
+<schema
+ xmlns='http://www.w3.org/2001/XMLSchema'
+ xmlns:xbrli='http://www.xbrl.org/2003/instance'
+ xmlns:link='http://www.xbrl.org/2003/linkbase'
+ xmlns:xlink='http://www.w3.org/1999/xlink'
+ xmlns:skos-arcroles='https://xbrlsite.azurewebsites.net/seattlemethod/cm/skos-arcroles'
+ targetNamespace='https://xbrlsite.azurewebsites.net/seattlemethod/cm/skos-arcroles'
+ elementFormDefault='qualified'
+ attributeFormDefault='unqualified'>
+  <annotation>
+    <documentation>SKOS is a simple knowledge organization system. See https://www.w3.org/TR/2009/REC-skos-reference-20090818/Provides  This XBRL taxonomy schema provides a set of XBRL arcroles that are intended to map to SKOS semantics.</documentation>
+    <appinfo>
+
+      <link:arcroleType arcroleURI='https://xbrlsite.azurewebsites.net/seattlemethod/cm/skos-arcroles/arcrole/broader-narrower' id='broader-narrower' cyclesAllowed='undirected'>
+        <link:definition>Broader, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#broader Narrower, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#narrower  Indicates the hierarchical relation between a broader concept and a narrower concept as defined by SKOS.</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+
+      <link:arcroleType arcroleURI='https://xbrlsite.azurewebsites.net/seattlemethod/cm/skos-arcroles/arcrole/concept-relatedConcept' id='concept-relatedConcept' cyclesAllowed='undirected'>
+        <link:definition>Related, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#related  Indicates an assiciative relationship, that a concept is somehow related to another concept as defined by SKOS.</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+
+      <link:arcroleType arcroleURI='https://xbrlsite.azurewebsites.net/seattlemethod/cm/skos-arcroles/arcrole/concept-simile' id='concept-simile' cyclesAllowed='undirected'>
+        <link:definition>Simile, https://www.wikidata.org/wiki/Q199714; CloseMatch, https://www.w3.org/TR/2009/REC-skos-reference-20090818/#mapping; Indicates that a concept is like or similar to another concept.</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+</schema>

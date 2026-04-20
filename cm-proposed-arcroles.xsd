@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA 2024-04-20 -->
+<!-- Seattle Method Arcroles for what Campbell Pryde suggested to SPEC Working Group -->
+<schema
+	xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:xbrli="http://www.xbrl.org/2003/instance"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:cm-arcroles2="https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-arcroles2"
+	targetNamespace="https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-arcroles2"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+  <annotation>
+    <documentation>Arcroles suggested by Campbell Pryde that would "add link roles that allow the designation of semantic meaning to concepts.
+			The link roles allow the assignment of traits to concepts and the ability to capture semantic meaning relative to related concepts.</documentation>
+    <appinfo>
+
+
+      <link:arcroleType arcroleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/proposed/arcrole/instant-accrual" id="instant-accrual" cyclesAllowed="any">
+        <link:definition>Indicates the relationship between an instant concept and a durational accrual concept representing the provision
+					of expense or income against the instant concept (Typically an asset or liability). The source concept is always an instant
+					and the target concept is always a duration.</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+			<link:arcroleType arcroleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/proposed/arcrole/instant-contra" id="instant-contra" cyclesAllowed="any">
+        <link:definition>Indicates that the target instant contra concept is an offset against the concept on the source instant end of
+					the arc. The contra target concept must also be an instant concept and the balance type of the contra target concept must be
+					the opposite balance type of the source instant concept.</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+			<link:arcroleType arcroleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/proposed/arcrole/instant-inflow" id="instant-inflow" cyclesAllowed="any">
+        <link:definition>Indicates that the inflow duration concept adds to the balance of the instant concept. An accounting instant
+					concept with a debit balance will have an associated inflow concept with a debit balance. An instant concept with a credit
+					balance will have an associated inflow concept with a credit balance.</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+			<link:arcroleType arcroleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/proposed/arcrole/instant-outflow" id="instant-outflow" cyclesAllowed="any">
+        <link:definition>Indicates that the outflow duration concept reduces the balance of the instant concept. An accounting instant
+					concept with a debit balance will have an associated outflow element with a credit balance.</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+
+
+			<link:arcroleType arcroleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/proposed/arcrole/trait-concept" id="trait-concept" cyclesAllowed="any">
+        <link:definition>Indicates the relationship between a source duration trait domain member and a target concept. Trait concepts are
+					abstract concepts with a domain item type. Trait-concept relationships describe the qualities or states of being of a target concept.</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+			<link:arcroleType arcroleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/proposed/arcrole/trait-domain" id="trait-domain" cyclesAllowed="any">
+        <link:definition>The parent report element category allows this report element category as a child.</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+
+
+			<link:arcroleType arcroleURI="https://xbrlsite.azurewebsites.net/seattlemethod/cm/proposed/arcrole/class-subclass" id="class-subclass" cyclesAllowed="any">
+        <link:definition>Indicates the relationship between a source class concept and a target subclass concept. Class-subclass relationships
+					describe that the target concept has the same attributes of the class concept with further qualifiers. All the traits of the class
+					source concept are also applicable to the target subclass concept.	Incorporates inheritance.	This mirrors class relationships such
+					as type-of in UML or class-subclass on Object Oriented Programming.</link:definition>
+        <link:usedOn>link:definitionArc</link:usedOn>
+      </link:arcroleType>
+
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+</schema>
