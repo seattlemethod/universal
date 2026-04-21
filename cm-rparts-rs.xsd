@@ -13,9 +13,8 @@
 
   <annotation>
     <appinfo>
-      <!-- Reference resouorce roles -->
-
-			<link:roleType roleURI="https://github.com/seattlemethod/universal/cm/roles/reportingStyle" id="reportingStyle">
+        <!-- Reference resouorce roles -->
+		<link:roleType roleURI="https://github.com/seattlemethod/universal/cm/roles/reportingStyle" id="reportingStyle">
         <link:definition>A reference that points to a reporting style for a report.</link:definition>
         <link:usedOn>link:reference</link:usedOn>
       </link:roleType>
@@ -26,7 +25,7 @@
   <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
 
 
-	<element id="rpart_Description" name="Description" type="string" substitutionGroup="link:part">
+  <element id="rpart_Description" name="Description" type="string" substitutionGroup="link:part">
     <annotation>
       <documentation xml:lang="en">Description of resource.</documentation>
     </annotation>
